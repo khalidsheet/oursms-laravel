@@ -54,11 +54,10 @@ $oursmsClient->getSmsStatus(string $messageId);
 
 ## Authors
 
-- [@khalidsheet](https://www.github.com/khalidsheet)
+-  [@khalidsheet](https://www.github.com/khalidsheet)
 
   
 ## License
-
 [MIT](https://choosealicense.com/licenses/mit/)
 
   
