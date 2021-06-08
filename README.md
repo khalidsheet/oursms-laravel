@@ -53,11 +53,7 @@ $oursmsClient->getSmsStatus(string $messageId);
 **Notice:** ``to`` is the phone number, ``message`` is the actuall mesasge that will be send to the user
 
 ## Authors
-
 -  [@khalidsheet](https://www.github.com/khalidsheet)
 
-  
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
-
-  
