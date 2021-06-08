@@ -6,7 +6,6 @@ namespace Khalidsheet\Oursms;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
-use GuzzleHttp\Psr7\Request;
 
 
 class Oursms extends OursmsValidator
@@ -89,6 +88,7 @@ class Oursms extends OursmsValidator
             'base_uri' => $this->host,
         ]);
 
+
         try {
             $response = $client->request($method, $url, [
                'json' => [
@@ -107,9 +107,7 @@ class Oursms extends OursmsValidator
             return $response->getBody();
 
         } catch (GuzzleException $exception) {
-            return response()->json([
-                's' => $exception->getMessage()
-            ]);
+            throw $exception;
         }
     }
 }

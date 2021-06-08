@@ -21,10 +21,10 @@ abstract class OursmsValidator
         $transformedUserId = "";
         if (Str::startsWith($userId, "SP-")) {
             $transformedUserId = Str::replace("SP-", "", $userId);
-            return (string)((int) $transformedUserId);
+            return ((int) $transformedUserId);
         }
 
-        return $userId;
+        return $transformedUserId;
     }
 
 
