@@ -1,5 +1,7 @@
 # Oursms laravel client
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a42fe07964b14c8d9e2a874809aca3c6)](https://app.codacy.com/gh/khalidsheet/oursms-laravel?utm_source=github.com&utm_medium=referral&utm_content=khalidsheet/oursms-laravel&utm_campaign=Badge_Grade_Settings)
+
 [https://oursms.app](https://oursms.app) client library that allows you to send SMS
 
 ## Installation
