@@ -35,8 +35,6 @@ class Oursms extends OursmsValidator
 
     public function __construct()
     {
-        dd($this->transformUserId("SP-0041"));
-
         $this->userId = $this->transformUserId(config('oursms.userId'));
         $this->key = config('oursms.key');
     }
