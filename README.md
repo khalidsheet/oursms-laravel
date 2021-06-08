@@ -50,7 +50,7 @@ If you wish to check the status of your message
 ```php
 $oursmsClient->getSmsStatus(string $messageId);
 ```
-**Notice:** ``to`` is the phone number, ``message`` is the actuall mesasge that will be send to the user
+**Notice:** ``to`` is the phone number, ``message`` is the actuall mesasge that will be send to the user.
 
 ## Authors
 -  [@khalidsheet](https://www.github.com/khalidsheet)
