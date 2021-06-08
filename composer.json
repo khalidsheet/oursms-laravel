@@ -1,0 +1,28 @@
+{
+    "name": "khalidsheet/oursms",
+    "description": "A wrapper package for sending sms",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Khalid Sheet",
+            "email": "khalid.m.sheet@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Khalidsheet\\Oursms\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Khalidsheet\\Oursms\\OursmsServiceProvider"
+            ]
+        }
+    }
+}
