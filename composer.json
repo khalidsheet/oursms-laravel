@@ -3,7 +3,7 @@
     "description": "A wrapper package for sending sms",
     "license": "MIT",
     "minimum-stability": "stable",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "authors": [
         {
             "name": "Khalid Sheet",
