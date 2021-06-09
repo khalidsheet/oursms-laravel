@@ -53,6 +53,35 @@ $oursmsClient->getSmsStatus(string $messageId);
 ```
 **Notice:** ``to`` is the phone number, ``message`` is the actuall mesasge that will be send to the user.
 
+
+## Trait Usage/Examples
+Also, you can use trait to send SMS or OTP messages to a user
+
+Add the **Messageable** trait to your model.
+
+```php
+use Khalidsheet\Oursms\Traits\Messageable;
+
+class User extends Model {
+     use Messageable;
+
+     ...
+}
+```
+
+Now you can use it like this
+```php
+$user = User::find(1);
+
+// Sending OSM 
+$user->sendMessage(string $message);
+
+// Sending OTP
+$user->sendOtp(string $otp);
+```
+
+**Notice:** Trait functionality only available from version **1.1.0** or later
+
 ## Authors
 -  [@khalidsheet](https://www.github.com/khalidsheet)
 
