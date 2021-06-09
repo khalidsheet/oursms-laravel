@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Khalidsheet\Oursms;
+namespace Khalidsheet\Oursms\Exceptions;
 
-class PhoneNumberException extends \HttpException
+class PhoneNumberException extends \Exception
 {
 
     public function __construct()

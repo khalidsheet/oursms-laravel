@@ -5,6 +5,7 @@ namespace Khalidsheet\Oursms;
 
 
 use Illuminate\Support\Str;
+use Khalidsheet\Oursms\Exceptions\PhoneNumberException;
 
 abstract class OursmsValidator
 {

@@ -47,7 +47,7 @@ class Oursms extends OursmsValidator
     public function sendMessage($to, $message)
     {
         return $this->sendHttpRequest("api/v1/SMS/Add/SendOneSms", "POST", [
-            "phoneNumber" => $to,
+            "phoneNumber" => $this->validatePhoneNumber($to),
             "message" => $message
         ]);
     }
